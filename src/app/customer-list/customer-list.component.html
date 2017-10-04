@@ -1,6 +1,6 @@
 <br>
 Search:
-<input type="text" id="enter" (keyup)="search()" placeholder="Enter query"><br><br>
+<input type="text" id="enter" [(ngModel)]="searchText" placeholder="Enter query"><br><br>
 <table id="table1" class="table table-bordered table-hover table-striped">
 <tr>
     <th (click)="sortTable(0)">#</th>
@@ -11,7 +11,7 @@ Search:
     <th (click)="sortTable(5)">Date Created</th>
     <th (click)="sortTable(6)">Date Updated</th>
 </tr>
-<tr *ngFor="let rec of records">
+<tr *ngFor="let rec of records | searchText:searchText" >
     <td>{{ rec.id }}</td>
     <td>{{ rec.firstName }}</td>
     <td>{{ rec.lastName }}</td>

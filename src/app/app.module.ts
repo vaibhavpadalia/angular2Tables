@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { routingComponents } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { SearchTextPipe } from './search-text.pipe';
 
 @NgModule({
   declarations: [
@@ -13,10 +14,12 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     routingComponents,
+    SearchTextPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

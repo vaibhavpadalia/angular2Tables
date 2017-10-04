@@ -1,6 +1,8 @@
 <br>
+<div style="text-align:center;">
 Search:
 <input type="text" [(ngModel)]="searchText" placeholder="Enter query"><br><br>
+</div>
 <table id="table1" class="table table-bordered table-hover table-striped">
 <tr>
     <th (click)="sortTable(0)">#</th>
@@ -20,4 +22,4 @@ Search:
     <td>{{ rec.dateCreated }}</td>
     <td>{{ rec.dateUpdated }}</td>
 </tr>
-</table>    
+</table>

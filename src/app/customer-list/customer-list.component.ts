@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-customer-list',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerListComponent implements OnInit {
   records: any[];
-  constructor() {
+  constructor(private router: Router) {
     this.records = [
       {
         id: 1,
@@ -94,5 +95,8 @@ export class CustomerListComponent implements OnInit {
       }
     }
   }
+}
+doThis(rec) {
+  this.router.navigate(['/showdetails', rec.id, rec.firstName, rec.lastName, rec.email, rec.isActive, rec.dateCreated, rec.dateUpdated]);
 }
 }

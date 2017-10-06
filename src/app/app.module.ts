@@ -14,7 +14,7 @@ import { SearchTextPipe } from './search-text.pipe';
     HeaderComponent,
     FooterComponent,
     routingComponents,
-    SearchTextPipe,
+    SearchTextPipe
   ],
   imports: [
     BrowserModule,

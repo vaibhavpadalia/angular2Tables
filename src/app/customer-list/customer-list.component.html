@@ -14,7 +14,7 @@ Search:
     <th (click)="sortTable(5)">Date Created</th>
     <th (click)="sortTable(6)">Date Updated</th>
 </tr>
-<tr *ngFor="let rec of records | searchText:searchText" >
+<tr *ngFor="let rec of records | searchText:searchText" (click)="doThis(rec)" >
     <td>{{ rec.id }}</td>
     <td>{{ rec.firstName }}</td>
     <td>{{ rec.lastName }}</td>

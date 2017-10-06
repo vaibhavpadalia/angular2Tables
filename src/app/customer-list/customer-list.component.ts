@@ -87,8 +87,7 @@ export class CustomerListComponent implements OnInit {
       rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
       switching = true;
       switchcount++;
-    }
-    else {
+    } else {
       if (switchcount === 0 && dir === 'asc') {
         dir = 'desc';
         switching = true;

@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent implements OnInit {
+  title = 'Customer List';
   records: any[];
   constructor(private router: Router) {
     this.records = [

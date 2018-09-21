@@ -8,7 +8,8 @@ const routes: Routes = [
     { path: 'welcome', component: WelcomeComponent},
     { path: 'customerlist', component: CustomerListComponent },
     { path: '', component: WelcomeComponent},
-    { path: 'showdetails/:id/:firstName/:lastName/:email/:isActive/:dateCreated/:dateUpdated', component: ShowDetailsComponent }
+    { path: 'showdetails/:id/:firstName/:lastName/:email/:isActive/:dateCreated/:dateUpdated', component: ShowDetailsComponent },
+    { path: '**', component: WelcomeComponent }
 ];
 
 @NgModule({
